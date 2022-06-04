@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>iSkillers Signup</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="title">Students Signup</div>
+      <img src="./images/logo.png" alt="logo" class="logo" />
+      <form onsubmit="signup(); return false">
+        <input type="text" id="FullName" placeholder="Name" />
+        <input type="text" id="FathersName" placeholder="Father's Name" />
+        <input type="email" id="email" placeholder="Email" />
+        <input type="password" id="upass" placeholder="Password" />
+        <input type="text" id="CNIC" placeholder="CNIC Number" />
+        <input type="number" id="MobileNo" placeholder="Mobile Number" />
+        <select id="courses">
+          <option value="">Select Courses</option>
+          <option value="AppDev">Mobile App Development</option>
+          <option value="ECom">E-Commerce Course</option>
+          <option value="WebDev">Web Development and Designing</option>
+          <option value="Freelancing">Freelancing</option>
+          <option value="SMM">Social Media Marketing</option>
+          <option value="YT">Youtube Mastery</option>
+          <option value="GraphicDesign">Graphic Design</option>
+          <option value="Wp">WordPress</option>
+        </select>
+        <select id="qualification">
+          <option value="">Select Qualification</option>
+          <option value="X">Matriculation</option>
+          <option value="XII">Intermediate</option>
+          <option value="Graduate">Graduate</option>
+        </select>
+        <select id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <input type="text" id="Photo" />
+        <div class="div_laptop">
+          <input type="checkbox" id="laptop" class="checkbox" />
+          <label for="laptop">I have laptop for classes</label>
+        </div>
+        <p id="message"></p>
+        <input type="submit" value="Signup" class="button" onclick="signup(); return false" />
+      </form>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

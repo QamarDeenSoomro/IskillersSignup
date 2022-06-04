@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: bree;
+}
+@font-face {
+    font-family: bree;
+    src: url(./fonts/BreeSerif-Regular.ttf);
+}
+body {
+    background-color: rgb(250, 230, 255);
+    display: flex;
+    flex: 1 1 0%;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center!important; */
+    /* background-color: #fff; */
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 13px -7px #000, 5px 5px 8px 5px transparent;
+    width: 40%;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 80%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:#98189a;
+}
+
+.title {
+    background: linear-gradient(90deg, #293b90, #98189a) !important;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+input{
+    color:#98189a;
+    width: 80%;
+    border: 1px solid #98189a;
+    border-radius: 5px;
+    outline: none;
+    color: #98189a;
+    font-size: 12px!important;
+    padding: 2%;
+    height: 30px;
+    overflow: visible;
+}
+select{
+    width: 85%;
+    height: 40px;
+}
+.div_laptop{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: flex-start;
+    align-self: flex-start;
+    justify-content: center;
+}
+label{
+    width: 90%;
+    font-size: 16px;
+    /* word-wrap: n; */
+}
+.checkbox{
+height: 20px;
+}
+.button{
+    background: linear-gradient(90deg,#293b90,#98189a)!important;
+    color: #fff;
+    box-shadow: 0 4px 2px -2px grey;
+    cursor: pointer;
+    height: 40px;
+    width: 40%;
+    border: none;
+    padding: 1%;
+    border-radius: 50px;
+    margin-top: 20px;
+    outline: none!important;
+}
+#message{
+    color: red;
+}
