@@ -21,22 +21,31 @@ function signup() {
         email.focus();
     } else if (upass.value.length === 0) {
         message.innerHTML = "Input Your Password"
+        upass.focus();
     } else if (upass.value.length < 7) {
         message.innerHTML = "Password is not Strong Enough"
+        upass.focus();
     } else if (CNIC.value === "") {
         message.innerHTML = "Input your CNIC"
+        CNIC.focus();
     } else if (CNIC.value.length != 13) {
         message.innerHTML = "Incorrect CNIC format"
+        CNIC.focus();
     } else if (MobileNo.value === "") {
         message.innerHTML = "Input Mobile Number"
+        MobileNo.focus();
     } else if (MobileNo.value.length != 11) {
         message.innerHTML = "Incorrect Mobile Number"
+        MobileNo.focus();
     } else if (courses.value === "") {
         message.innerHTML = "Select a Course"
+        courses.focus();
     } else if (qualification.value === "") {
         message.innerHTML = "Choose your qualification"
+        qualification.focus();
     } else if (gender.value === "") {
         message.innerHTML = "Choose your Gender"
+        gender.focus();
     }
     else {
         // for (let i = 0; i < laptop.length; i++) {
@@ -64,6 +73,7 @@ function signup() {
             console.log(UserData);
         } else {
             message.innerHTML = "You Must have laptop"
+            laptop.focus();
         }
     }
 }
