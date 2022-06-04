@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: bree;
 }
+
 @font-face {
     font-family: bree;
     src: url(./fonts/BreeSerif-Regular.ttf);
 }
+
 body {
     background-color: rgb(250, 230, 255);
     display: flex;
@@ -43,40 +45,51 @@ form {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color:#98189a;
+    color: #98189a;
 }
 
 .title {
+    font-family: bree !important;
     background: linear-gradient(90deg, #293b90, #98189a) !important;
     color: #fff;
     padding-top: 30px;
     padding-bottom: 30px;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
 }
-input{
-    color:#98189a;
+
+input {
+    color: #98189a;
     width: 80%;
     border: 1px solid #98189a;
     border-radius: 5px;
     outline: none;
     color: #98189a;
-    font-size: 12px!important;
+    font-size: 12px !important;
     padding: 2%;
     height: 30px;
     overflow: visible;
 }
-select{
-    width: 85%;
-    height: 40px;
+
+input::placeholder {
+    color: #98189a;
 }
-.div_laptop{
-    margin: 10px;
+
+select {
+    width: 85%;
+    height: 50px;
+    border: 1px solid #98189a;
+    border-radius: 5px;
+    color: #98189a;
+}
+
+.div_laptop {
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -84,16 +97,19 @@ select{
     align-self: flex-start;
     justify-content: center;
 }
-label{
+
+label {
     width: 90%;
     font-size: 16px;
     /* word-wrap: n; */
 }
-.checkbox{
-height: 20px;
+
+.checkbox {
+    height: 20px;
 }
-.button{
-    background: linear-gradient(90deg,#293b90,#98189a)!important;
+
+.button {
+    background: linear-gradient(90deg, #293b90, #98189a) !important;
     color: #fff;
     box-shadow: 0 4px 2px -2px grey;
     cursor: pointer;
@@ -103,8 +119,9 @@ height: 20px;
     padding: 1%;
     border-radius: 50px;
     margin-top: 20px;
-    outline: none!important;
+    outline: none !important;
 }
-#message{
+
+#message {
     color: red;
 }
