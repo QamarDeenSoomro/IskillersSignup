@@ -77,3 +77,42 @@ function signup() {
         }
     }
 }
+function SUChange() {
+    var SUform =  document.getElementById("SUform");
+    var SIform =  document.getElementById("SIform");
+    var SIlink = document.getElementById("login_link");
+    var SUlink = document.getElementById("Signup_link");
+    var title = document.getElementById("title");
+    SUform.style.display="none";
+    SIform.style.display="flex";
+    SIlink.style.display="none";
+    SUlink.style.display="block";
+    title.innerHTML="iSkillers SignIn";
+}
+
+function SIChange() {
+    var title = document.getElementById("title");
+    var SUform =  document.getElementById("SUform");
+    var SIform =  document.getElementById("SIform");
+    var SIlink = document.getElementById("login_link");
+    var SUlink = document.getElementById("Signup_link");
+    SUform.style.display="flex";
+    SIform.style.display="none";
+    SIlink.style.display="block";
+    SUlink.style.display="none";
+    title.innerHTML="iSkillers Signup";
+}
+function SignIn() {
+    var SIemail = document.getElementById("SIemail");
+    var SIpass = document.getElementById("SIpass");
+    var SImessage = document.getElementById("SImessage");
+    if (SIemail.value==="") {
+        SImessage.innerHTML="Please Input Email"
+    } else if (SIpass.value===""){
+        SImessage.innerHTML="Input your password"
+    }
+     else {
+        alert("Login Confirm")
+    }
+
+}

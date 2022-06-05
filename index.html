@@ -9,9 +9,9 @@
   </head>
   <body>
     <div id="main">
-      <div class="title">Students Signup</div>
+      <div class="title" id="title">Students Signup</div>
       <img src="./images/logo.png" alt="logo" class="logo" />
-      <form onsubmit="signup(); return false">
+      <form onsubmit="signup(); return false" id="SUform">
         <input type="text" id="FullName" placeholder="Name" />
         <input type="text" id="FathersName" placeholder="Father's Name" />
         <input type="email" id="email" placeholder="Email" />
@@ -46,12 +46,20 @@
         </div>
         <p id="message"></p>
         <input
-          type="submit"
-          value="Signup"
-          class="button"
-          onclick="signup(); return false"
+        type="submit"
+        value="Signup"
+        class="button"
+        onclick="signup(); return false"
         />
       </form>
+      <form id="SIform" onsubmit="SignIn(); return false">
+        <input type="email" id="SIemail" placeholder="Email" />
+        <input type="password" id="SIpass" placeholder="Password" />
+        <p id="SImessage"></p>
+        <input type="submit" value="Login" class="button">
+      </form>
+      <p id="login_link" onclick="SUChange()">Sign In</p>
+      <p id="Signup_link" onclick="SIChange()">Sign Up</p>
     </div>
   </body>
   <script src="app.js"></script>

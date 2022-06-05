@@ -47,7 +47,16 @@ form {
     align-items: center;
     color: #98189a;
 }
-
+#SIform{
+    width: 80%;
+    height: 200px;
+    display: none;
+    /* display: flex !important; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #98189a;
+}
 .title {
     font-family: bree !important;
     background: linear-gradient(90deg, #293b90, #98189a) !important;
@@ -122,17 +131,27 @@ label {
     outline: none !important;
 }
 
-#message {
+#message, #SImessage {
     color: red;
 }
-
-@media only screen and (max-width: 1000px) {
+#login_link{
+    cursor: pointer;
+    color: blue;
+    margin-top: 10px;
+}
+#Signup_link{
+    display: none;
+    cursor: pointer;
+    color: blue;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 1100px) {
     #main {
-        width: 60%;
+        width: 70%;
     }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 900px) {
     #main {
         width: 80%;
     }
