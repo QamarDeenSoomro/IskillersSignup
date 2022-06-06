@@ -43,7 +43,7 @@ form {
     height: 800px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between ;
     align-items: center;
     color: #98189a;
 }
@@ -138,13 +138,16 @@ label {
     cursor: pointer;
     color: blue;
     margin-top: 10px;
+    text-decoration: underline;
 }
 #Signup_link{
     display: none;
+    text-decoration: underline;
     cursor: pointer;
     color: blue;
     margin-top: 10px;
 }
+
 @media only screen and (max-width: 1100px) {
     #main {
         width: 70%;
@@ -160,5 +163,11 @@ label {
 @media only screen and (max-width: 600px) {
     #main {
         width: 90%;
+    }
+    form{
+        width: 100%;
+    }
+    #SIform{
+        width: 100%;
     }
 }
